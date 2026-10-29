@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #FFF7F2; }
+
+@layer components {
+  .sectionTitle {
+    @apply uppercase tracking-[0.5em] text-pink text-sm md:text-base text-center;
+  }
+  .heroButton {
+    @apply px-5 py-2 border border-plum rounded-full uppercase text-xs tracking-widest
+      text-plum bg-white/70 transition-all hover:border-pink hover:text-pink;
+  }
+  .contactInput {
+    @apply outline-none bg-card rounded-md border-b px-4 py-3 border-plum
+      text-nude placeholder-nude/40 transition-all focus:border-pink hover:border-pink/60 w-full;
+  }
+  .chip {
+    @apply text-xs px-2.5 py-1 rounded-full bg-petal text-plum whitespace-nowrap;
+  }
+}
+
+/* thin scrollbars for the horizontal rails */
+.rail { scrollbar-width: thin; scrollbar-color: #D4447E40 transparent; }
+.rail::-webkit-scrollbar { height: 6px; }
+.rail::-webkit-scrollbar-thumb { background: #D4447E55; border-radius: 9999px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
