@@ -41,7 +41,7 @@ export const experience: Experience[] = [
   {
     role: 'Solutions Architect / AI Engineer — AI Enablement',
     org: 'Co-operative Bank of Kenya',
-    dates: 'Aug 2025 – Present',
+    dates: 'Oct 2025 – Present',
     points: [
       'Authored the Unified AI Integration Roadmap: AI as shared services across 9 bank products.',
       'Architected and built Rafiki, a GenAI banking assistant on AWS Bedrock (Claude) with RAG, multilingual EN/SW/Sheng support, and a WhatsApp channel.',
@@ -53,7 +53,7 @@ export const experience: Experience[] = [
   {
     role: 'AWS Developer & Data Engineer',
     org: 'A1 Strategic Business Solutions',
-    dates: 'Aug 2024 – Aug 2025',
+    dates: 'Aug 2024 – Sep 2025',
     points: [
       'Built AWS ETL (Glue → Redshift → QuickSight), cutting monthly reporting time by ~60%.',
       'Built invoice automation with Amazon Textract and Bedrock LLMs.',
